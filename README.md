@@ -139,13 +139,38 @@ Give access to BOAVIZTA reference data and methodologies throught a RESTful API
 
 ### Objective
 
+Cloud-scanner returns environmental impacts of your AWS Instances usage.
+
+It combines real time usage data from your AWS account with Boavizta API to offer a global view of your impacts on a given region.
+
 ### Technical stack
 
 **Language :** Rust
 
 ### Main features
 
+Cloud-scanner can be used:
+
+* from command line 💻
+* as a serverless application deployed with AWS lambda ⚡
+
+Cloud-scanner can be automated to produce metrics at regular interval and monitor your impacts in a dashboard.
+
+See full documentation: [Introduction - Boavizta cloud scanner 📡](https://boavizta.github.io/cloud-scanner/)
+
 ### Milestones
+
+* December 2022: first public release targeting AWS EC2 instances.
+* 2023
+  * Compare results with outputs from Cloud Cardbon Footprint
+  * expand list of instances
+  * support serverless estimations
+  * Azure
+
+See also:
+
+* [Issues · Boavizta/cloud-scanner](https://github.com/Boavizta/cloud-scanner/issues)
+* [Milestones - Boavizta/cloud-scanner](https://github.com/Boavizta/cloud-scanner/milestones)
 
 ### Lead dev
 @demeringo
@@ -206,7 +231,13 @@ github : https://github.com/Boavizta/ecobenchmark-applicationweb-backend
 
 ### Main features
 
+Estimate impacts of a cloud account using billing or reports informations.
+
 ### Milestones
+
+Initiated  mid 2022 during Boavizta hackatons.
+
+⚠ On hold, no recent developments.
 
 ### Lead dev
 TBD 
