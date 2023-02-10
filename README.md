@@ -141,7 +141,9 @@ Give access to BOAVIZTA reference data and methodologies throught a RESTful API
 
 Cloud-scanner returns environmental impacts of your AWS Instances usage.
 
-It combines real time usage data from your AWS account with Boavizta API to offer a global view of your impacts on a given region.
+> Main  objective is to give  a **more realistic view of impacts** compared to what is natively returned in the dashboards of cloud providers, who often rely on carbon compensation mechanism or unclear methodology to display what we consider unrealistically low impacts.
+
+Cloud scanner combines real time usage data from your AWS account with Boavizta API to offer a global view of your impacts. It will later be enriched to cover other cloud providers.
 
 ### Technical stack
 
@@ -151,12 +153,12 @@ It combines real time usage data from your AWS account with Boavizta API to offe
 
 Generate real time metrics (json or prometheus) that can be displayed in dashboards.
 
+Fine granularity: provide filtering (on tags) to ease attribution to a service or application.
+
 Cloud-scanner can be used:
 
-* from command line 💻
-* as a serverless application deployed with AWS lambda ⚡
-
-Cloud-scanner can be automated to produce metrics at regular interval and monitor your impacts in a dashboard.
+* from command line 💻 (for a quick one-shot assessment)
+* as a server application (for continuous monitoring)⚡
 
 See full documentation: [Introduction - Boavizta cloud scanner 📡](https://boavizta.github.io/cloud-scanner/)
 
