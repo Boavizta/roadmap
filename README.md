@@ -145,9 +145,11 @@ It combines real time usage data from your AWS account with Boavizta API to offe
 
 ### Technical stack
 
-**Language :** Rust
+**Language :** Rust + AWS SDK
 
 ### Main features
+
+Generate real time metrics (json or prometheus) that can be displayed in dashboards.
 
 Cloud-scanner can be used:
 
@@ -161,11 +163,19 @@ See full documentation: [Introduction - Boavizta cloud scanner 📡](https://boa
 ### Milestones
 
 * December 2022: first public release targeting AWS EC2 instances.
-* 2023
-  * Compare results with outputs from Cloud Cardbon Footprint
-  * expand list of instances
-  * support serverless estimations
-  * Azure
+* 2023:
+  * **Communicate** on the tool (short video demo + article + Social Media posts)
+  * Call to contributions:
+    * Gather feedback by testing it in in multiple real world accounts
+    * Improve doc
+    * Compare results with outputs from Cloud Carbon Footprint
+  * Follow evolutions of Boavizta API (error margin a.s.o.)
+  * Add support for serverless (lambda) estimations
+  * Add a custom dashboard (using the new sveltejs components)
+  * Add support for OVH instances
+  * Add support for Azure
+  * Tech debt: use a better serverless plugin + change API SDK generation tool.
+  * Implement a module for terraform to help estimate future impacts prior to deployment (Maybe this means a separate dedicated projet).
 
 See also:
 
@@ -173,11 +183,13 @@ See also:
 * [Milestones - Boavizta/cloud-scanner](https://github.com/Boavizta/cloud-scanner/milestones)
 
 ### Lead dev
+
 @demeringo
 
 ### Links
 
-**github :** https://github.com/Boavizta/cloud-scanner
+* **github :** https://github.com/Boavizta/cloud-scanner
+* **documentation:** https://boavizta.github.io/cloud-scanner/
 
 
 ## Energizta
