@@ -1,11 +1,13 @@
 title Evaluate impacts of IS
 
-anchor user [0.96, 0.48]
+anchor User [0.96, 0.48]
 
-component IS_assesment [0.93, 0.62]
+component IS_assesment [0.93, 0.53]
 
-component Service_assesment [0.90, 0.21] label [-29, -27]
+component Service_assesment [0.93, 0.39] label [-29, -27]
 
+component Vizualization [0.79, 0.64]
+component Recommendations [0.76, 0.16] label [41, -7]
 
 component Inventory [0.71, 0.38]
 
@@ -15,14 +17,14 @@ component Negaoctet [0.20, 0.63] label [5, -10]
 
 component Rebound_effect [0.16, 0.08] label [-11, 18]
 
-component Network [0.78, 0.08]
+component Network [0.20, 0.06]
 component On_prem_infra [0.64, 0.52]
 component Cloud_infra [0.62, 0.43]
 component Workplace_devices [0.69, 0.61] label [38, -6]
 component End_user_devices [0.59, 0.29] label [40, -3]
 component Other_impacts [0.40, 0.46]
 
-component Method [0.82, 0.31]
+component Method [0.82, 0.37]
 
 User->Service_assesment
 User->IS_assesment
@@ -32,6 +34,9 @@ Service_assesment->Method
 
 IS_assesment->Inventory
 Service_assesment->Inventory
+
+pipeline Method [0.05, 0.95]
+
 pipeline Inventory [0.05, 0.95]
 Inventory->Workplace_devices
 Inventory->Cloud_infra
@@ -45,6 +50,7 @@ pipeline Dataset [0.05, 0.95]
 Dataset->BoaviztAPI
 Dataset->Negaoctet
 Dataset->Rebound_effect
+Dataset->Network
 
 style wardley
 style handwritten
