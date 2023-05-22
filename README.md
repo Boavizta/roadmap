@@ -4,6 +4,7 @@ Let's create commons to make the environmental impact assessment of digital prod
 
 ## General roadmap
 
+![Impacts assessment landscape](images/Evaluate%20impacts%20of%20IS.png)
 
 ## Products
 
