@@ -2,9 +2,17 @@
 
 Let's create commons to make the environmental impact assessment of digital products, services and systems more reliable, easier and more open.
 
-## General roadmap
+## The global  landscape
+
+The global landscape of _global_ assessment of  information systems.
 
 ![Impacts assessment landscape](images/Evaluate%20impacts%20of%20IS.png)
+
+## specific landscapes
+
+TODO: build a map that describe assessment of a digital product or service.
+
+TODO: complete this with a map focused on Boavizta tools / components (how they integrate)
 
 ## Products
 
