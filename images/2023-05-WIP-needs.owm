@@ -3,7 +3,7 @@ title Evaluate impacts of IS
 anchor User [0.96, 0.48]
 
 component IS_assesment_app [0.70, 0.30] label [46, 6]
-component EF_reporting [0.86, 0.46]
+component EF_reporting [0.86, 0.46] label [5, -10]
 
 component Impact_report [0.75, 0.13] label [28, -17]
 
@@ -64,6 +64,12 @@ Dataset->Rebound_effect
 Dataset->Network
 
 evolve IS_assesment_app 0.88 label [12, -25]
+
+annotation 1 [[0.63,0.40],[0.79,0.51] ] Method and mandatory extra financial reporting will coevolve
+annotation 2 [[0.32,0.36]] Dataset become more complet (and open ?)
+annotation 3 [[0.52,0.19] ] Inventory from yearly to real time
+annotation 4 [[0.70,0.72] ] Assement app standardize
+
 
 style wardley
 style handwritten
