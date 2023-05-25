@@ -73,7 +73,7 @@ TBD
 
 ### Objective
 
-Give access to BOAVIZTA reference data and methodologies throught a RESTful API
+Give access to BOAVIZTA reference data and methodologies through a RESTful API
 
 ### Technical stack
 
@@ -152,7 +152,7 @@ Cloud-scanner returns environmental impacts of your AWS Instances usage.
 
 > Main  objective is to give  a **more realistic view of impacts** compared to what is natively returned in the dashboards of cloud providers, who often rely on carbon compensation mechanism or unclear methodology to display what we consider unrealistically low impacts.
 
-Cloud scanner combines real time usage data from your AWS account with Boavizta API to offer a global view of your impacts. It will later be enriched to cover other cloud providers.
+Cloud scanner combines *real time usage* data from your AWS account with Boavizta API to offer a global view of your impacts. It will later be enriched to cover other cloud providers.
 
 ### Technical stack
 
