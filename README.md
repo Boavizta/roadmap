@@ -178,6 +178,13 @@ See full documentation: [Introduction - Boavizta cloud scanner 📡](https://boa
   * Add support for Azure
   * Tech debt: use a better serverless plugin + change API SDK generation tool.
   * Implement a module for terraform to help estimate future impacts prior to deployment (Maybe this means a separate dedicated projet).
+* 2024:
+  * Add the possibility to simulate impacts of an arbitrary inventory
+  * Add support for Azure
+  * Add object storage support (s3 like)
+  * Integration with K8s usage data
+  * Add impacts of GPU's (for AI/ML workloads)
+  * Improve documentation
 
 See also:
 
