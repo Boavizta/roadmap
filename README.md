@@ -2,8 +2,17 @@
 
 Let's create commons to make the environmental impact assessment of digital products, services and systems more reliable, easier and more open.
 
-## General roadmap
+## The global  landscape
 
+The global landscape of _global_ assessment of  information systems.
+
+![Impacts assessment landscape](images/Evaluate%20impacts%20of%20IS.png)
+
+## specific landscapes
+
+TODO: build a map that describe assessment of a digital product or service.
+
+TODO: complete this with a map focused on Boavizta tools / components (how they integrate)
 
 ## Products
 
@@ -64,7 +73,7 @@ TBD
 
 ### Objective
 
-Give access to BOAVIZTA reference data and methodologies throught a RESTful API
+Give access to BOAVIZTA reference data and methodologies through a RESTful API
 
 ### Technical stack
 
@@ -143,7 +152,7 @@ Cloud-scanner returns environmental impacts of your AWS Instances usage.
 
 > Main  objective is to give  a **more realistic view of impacts** compared to what is natively returned in the dashboards of cloud providers, who often rely on carbon compensation mechanism or unclear methodology to display what we consider unrealistically low impacts.
 
-Cloud scanner combines real time usage data from your AWS account with Boavizta API to offer a global view of your impacts. It will later be enriched to cover other cloud providers.
+Cloud scanner combines *real time usage* data from your AWS account with Boavizta API to offer a global view of your impacts. It will later be enriched to cover other cloud providers.
 
 ### Technical stack
 
@@ -178,6 +187,13 @@ See full documentation: [Introduction - Boavizta cloud scanner 📡](https://boa
   * Add support for Azure
   * Tech debt: use a better serverless plugin + change API SDK generation tool.
   * Implement a module for terraform to help estimate future impacts prior to deployment (Maybe this means a separate dedicated projet).
+* 2024:
+  * Add the possibility to simulate impacts of an arbitrary inventory
+  * Add support for Azure
+  * Add object storage support (s3 like)
+  * Integration with K8s usage data
+  * Add impacts of GPU's (for AI/ML workloads)
+  * Improve documentation
 
 See also:
 
