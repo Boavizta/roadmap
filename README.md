@@ -1,9 +1,6 @@
-# Boavizta's roadmap
+# Boavizta's open source projects roadmap
 
 Let's create commons to make the environmental impact assessment of digital products, services and systems more reliable, easier and more open.
-
-## General roadmap
-
 
 ## Products
 
@@ -16,16 +13,13 @@ Let's create commons to make the environmental impact assessment of digital prod
 * 💾 [Boavizta repository](#boavizta-repository)
 * [Cloud-bill](#cloud-bill)
 
-
-
-
+----
 
 ## Datavizta
 
 ### Objective
 
 Explore Boavizta's data and methods through a pedagogical frontend.
-
 
 ### Technical stack
 
@@ -36,6 +30,7 @@ Explore Boavizta's data and methods through a pedagogical frontend.
 ### Main features
 
 This educational frontend intends to achieve several complementary objectives:
+
 - Being able to search easily for carbon impact factors for digital equipment in [Boavizta environmental footprint open database](https://github.com/Boavizta/environmental-footprint-data)
 - Being able to visualize the impacts repartition by stages of the life cycle of equipment by differentiating the use phase (scope 2) from the manufacturing, transport and end-of-life phases (scope 3)
 - Being able to assess the impacts of extending the life of the product or using it in one geographical area rather than another.
@@ -51,6 +46,7 @@ This educational frontend intends to achieve several complementary objectives:
 **demo :** https://dataviz.boavizta.org
 **github :** https://github.com/Boavizta/datavizta
 
+----
 
 ## BoaviztAPI
 
@@ -84,7 +80,7 @@ Give access to BOAVIZTA reference data and methodologies throught a RESTful API
 
 * V0.3 : 
   * Add the impacts of IoT devices
-  * Add multiple source of impacts factors (electicity map, research paper, ...)
+  * Add multiple source of impacts factors (electricity map, research paper, ...)
   * Add new component (GPU, HDD)
   * Automate the collection of of components\', devices\' and cloud instances\' characteristics 
 
@@ -92,7 +88,7 @@ Give access to BOAVIZTA reference data and methodologies throught a RESTful API
   * Model the electrical consumption from Energizta
 
 * V1 : 
-  * Test covorage of 95%
+  * Test coverage of 95%
   * Code quality process
 
 ### Lead dev
@@ -106,6 +102,7 @@ Give access to BOAVIZTA reference data and methodologies throught a RESTful API
 
 **demo api :** https://dev.api.boavizta.org/docs
 
+----
 
 ## Boagent
 
@@ -125,6 +122,8 @@ Give access to BOAVIZTA reference data and methodologies throught a RESTful API
 ### Links
 
 **github :** https://github.com/Boavizta/boagent
+
+----
 
 ## Cloud-scanner
 
@@ -176,6 +175,7 @@ See also:
 * **Project overview:** https://demeringo.github.io/cloud-scanner-intro/
 * **documentation:** https://boavizta.github.io/cloud-scanner/
 
+----
 
 ## Energizta
 
@@ -196,6 +196,7 @@ TBD
 
 **github :** https://github.com/Boavizta/Energizta
 
+----
 
 ## Eco-benchmark (Backend)
 
@@ -203,7 +204,7 @@ TBD
 
 Highlight the main way to achieve a sustainable design on a BackEnd API.
 
-For tech leaders ande developers.
+For tech leaders and developers.
 
 ### Technical stack
 
@@ -219,7 +220,7 @@ Language : All
 
 #### Measurement infrastructure 
 
-- Measure auotmation
+- Measure automation
 
 #### Services
 
@@ -250,9 +251,6 @@ Language : All
   * Design variant  
     * grpc protocole 
 
-#### Measurement infrastructure 
-
-#### Services
 
 ### Lead dev
 
@@ -264,16 +262,18 @@ github : https://github.com/Boavizta/ecobenchmark-applicationweb-backend
 
 How to Contribute : https://github.com/Boavizta/ecobenchmark-applicationweb-backend/blob/main/CONTRIBUTING.md
 
+----
 
 ## Boavizta repository
 
 ### Objective
 
-This data repository is maintained by [Boavizta](https://www.boavizta.org) and is complementary to Boavizta's environmental footprint evaluation methodology. It aims to reference as much data as possible to help organizations to evaluate the environmental footprint of their information systems, applications and digital services.
+This data repository is maintained by [Boavizta](https://www.boavizta.org) and is complementary to Boavizta's environmental footprint evaluation methodology (as implemented in [Boaviztapi](#boaviztapi)). It aims to reference as much data as possible to help organizations to evaluate the environmental footprint of their information systems, applications and digital services.
 
-Boavizta database is quite exclusively derived from PCF (Product Carbon Footprint) sheets provided by the manufacturers. Methodologies used by manufacturers are not transparent and have very large margins of error and the purpose of making these data available is mainly to give ideas of orders of magnitude and to compare different models from the same manufacturer.
-
-Therefore **WE RECOMMAND NOT USING THESE DATA TO MAKE ACCURATE IMPACTS EVALUATIONS** or to compare the impacts of devices from different manufacturers.
+> [!WARNING]
+> Boavizta database is quite exclusively derived from PCF (Product Carbon Footprint) sheets provided by the manufacturers. Methodologies used by manufacturers are not transparent and have very large margins of error and the purpose of making these data available is mainly to give ideas of orders of magnitude and to compare different models from the same manufacturer.
+>
+> Therefore **WE RECOMMAND NOT USING THESE DATA TO MAKE ACCURATE IMPACTS EVALUATIONS** or to compare the impacts of devices from different manufacturers.
 
 ### Technical stack
 
@@ -283,7 +283,7 @@ Therefore **WE RECOMMAND NOT USING THESE DATA TO MAKE ACCURATE IMPACTS EVALUATIO
 
 ### Milestones
 
-- Development on this project are frozen.
+⚠ Development on this project are frozen.
 
 ### Lead dev
 
@@ -292,6 +292,8 @@ Therefore **WE RECOMMAND NOT USING THESE DATA TO MAKE ACCURATE IMPACTS EVALUATIO
 ### Links
 
 **github :** https://github.com/Boavizta/environmental-footprint-data/blob/main/tools/spiders/README.md
+
+----
 
 ## Cloud-bill
 
@@ -310,7 +312,7 @@ Estimate impacts of a cloud usage of a cloud account using billing or reports in
 
 ⚠ On hold, no recent developments.
 
-Initiated  mid 2022 during Boavizta hackatons.
+Initiated  mid 2022 during Boavizta hackathons.
 
 ### Lead dev
 TBD 
