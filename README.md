@@ -7,40 +7,25 @@ Let's create commons to make the environmental impact assessment of digital prod
 
 ## Products
 
-* 💾 [Boavizta repository](#boavizta-repository)
 * [Datavizta](#datavizta)
 * 🛠️ [Boaviztapi](#boaviztapi)
 * [Boagent](#boagent)
 * 🛰️ [Cloud-scanner](#cloud-scanner)
 * 🔌 [Energizta](#energizta)
 * 📉 [Eco-benchmark](#eco-benchmark)
+* 💾 [Boavizta repository](#boavizta-repository)
 * [Cloud-bill](#cloud-bill)
 
 
-## Boavizta repository
 
-### Objective
-
-### Technical stack
-
-**Language :** Python, CSV
-
-### Main features
-
-### Milestones
-
-### Lead dev
-
-@airloren
-
-### Links
-
-**github :** https://github.com/Boavizta/environmental-footprint-data/blob/main/tools/spiders/README.md
 
 
 ## Datavizta
 
 ### Objective
+
+Explore Boavizta's data and methods through a pedagogical frontend.
+
 
 ### Technical stack
 
@@ -50,14 +35,21 @@ Let's create commons to make the environmental impact assessment of digital prod
 
 ### Main features
 
+This educational frontend intends to achieve several complementary objectives:
+- Being able to search easily for carbon impact factors for digital equipment in [Boavizta environmental footprint open database](https://github.com/Boavizta/environmental-footprint-data)
+- Being able to visualize the impacts repartition by stages of the life cycle of equipment by differentiating the use phase (scope 2) from the manufacturing, transport and end-of-life phases (scope 3)
+- Being able to assess the impacts of extending the life of the product or using it in one geographical area rather than another.
+
 ### Milestones
 
 ### Lead dev
-TBD
+
+@airloren
 
 ### Links
 
-**github :** https://github.com/Boavizta/boavizta-front
+**demo :** https://dataviz.boavizta.org
+**github :** https://github.com/Boavizta/datavizta
 
 
 ## BoaviztAPI
@@ -134,7 +126,6 @@ Give access to BOAVIZTA reference data and methodologies throught a RESTful API
 
 **github :** https://github.com/Boavizta/boagent
 
-
 ## Cloud-scanner
 
 ### Objective
@@ -144,10 +135,6 @@ Cloud-scanner returns environmental impacts of your AWS Instances usage.
 > Main  objective is to give  a **more realistic view of impacts** compared to what is natively returned in the dashboards of cloud providers, who often rely on carbon compensation mechanism or unclear methodology to display what we consider unrealistically low impacts.
 
 Cloud scanner combines real time usage data from your AWS account with Boavizta API to offer a global view of your impacts. It will later be enriched to cover other cloud providers.
-
-### Technical stack
-
-**Language :** Rust + AWS SDK
 
 ### Main features
 
@@ -162,42 +149,31 @@ Cloud-scanner can be used:
 
 See full documentation: [Introduction - Boavizta cloud scanner 📡](https://boavizta.github.io/cloud-scanner/)
 
-### Milestones
+### Roadmap (updated January 2025)
 
-* December 2022: first public release targeting AWS EC2 instances.
-* 2023:
-  * **Communicate** on the tool (short video demo + article + Social Media posts)
-  * Call to contributions:
-    * Gather feedback by testing it in in multiple real world accounts
-    * Improve doc
-    * Compare results with outputs from Cloud Carbon Footprint
-  * Follow evolutions of Boavizta API (error margin a.s.o.)
-  * Add support for serverless (lambda) estimations
-  * Add a custom dashboard (using the new sveltejs components)
-  * Add support for OVH instances
-  * Add support for Azure
-  * Tech debt: use a better serverless plugin + change API SDK generation tool.
-  * Implement a module for terraform to help estimate future impacts prior to deployment (Maybe this means a separate dedicated projet).
-* 2024:
-  * Add the possibility to simulate impacts of an arbitrary inventory
-  * Add support for Azure
-  * Add object storage support (s3 like)
-  * Integration with K8s usage data
-  * Add impacts of GPU's (for AI/ML workloads)
-  * Improve documentation
+1. Support automating inventory of additional providers
+2. Provide estimations related to object storage (like aws S3)
+3. FAAS / Serverless (like AWS lambda or Azure functions)
+4. Additional managed services (like DB as a service)
+5. Impacts of GPUs, which is key to assess AI/ML workload
 
 See also:
 
 * [Issues · Boavizta/cloud-scanner](https://github.com/Boavizta/cloud-scanner/issues)
 * [Milestones - Boavizta/cloud-scanner](https://github.com/Boavizta/cloud-scanner/milestones)
 
-### Lead dev
+### Technical stack
 
-@demeringo
+**Language :** Rust + AWS SDK
+
+### Lead devs
+
+[@demeringo](https://github.com/demeringo) & [@jnioche](https://github.com/jnioche)
 
 ### Links
 
-* **github :** https://github.com/Boavizta/cloud-scanner
+* **github:** https://github.com/Boavizta/cloud-scanner
+* **Project overview:** https://demeringo.github.io/cloud-scanner-intro/
 * **documentation:** https://boavizta.github.io/cloud-scanner/
 
 
@@ -289,9 +265,39 @@ github : https://github.com/Boavizta/ecobenchmark-applicationweb-backend
 How to Contribute : https://github.com/Boavizta/ecobenchmark-applicationweb-backend/blob/main/CONTRIBUTING.md
 
 
+## Boavizta repository
+
+### Objective
+
+This data repository is maintained by [Boavizta](https://www.boavizta.org) and is complementary to Boavizta's environmental footprint evaluation methodology. It aims to reference as much data as possible to help organizations to evaluate the environmental footprint of their information systems, applications and digital services.
+
+Boavizta database is quite exclusively derived from PCF (Product Carbon Footprint) sheets provided by the manufacturers. Methodologies used by manufacturers are not transparent and have very large margins of error and the purpose of making these data available is mainly to give ideas of orders of magnitude and to compare different models from the same manufacturer.
+
+Therefore **WE RECOMMAND NOT USING THESE DATA TO MAKE ACCURATE IMPACTS EVALUATIONS** or to compare the impacts of devices from different manufacturers.
+
+### Technical stack
+
+**Language :** Python, CSV
+
+### Main features
+
+### Milestones
+
+- Development on this project are frozen.
+
+### Lead dev
+
+@airloren
+
+### Links
+
+**github :** https://github.com/Boavizta/environmental-footprint-data/blob/main/tools/spiders/README.md
+
 ## Cloud-bill
 
 ### Objective
+
+Estimate impacts of a cloud usage of a cloud account using billing or reports informations.
 
 ### Technical stack
 
@@ -299,13 +305,12 @@ How to Contribute : https://github.com/Boavizta/ecobenchmark-applicationweb-back
 
 ### Main features
 
-Estimate impacts of a cloud account using billing or reports informations.
 
 ### Milestones
 
-Initiated  mid 2022 during Boavizta hackatons.
-
 ⚠ On hold, no recent developments.
+
+Initiated  mid 2022 during Boavizta hackatons.
 
 ### Lead dev
 TBD 
