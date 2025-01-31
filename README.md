@@ -10,6 +10,7 @@ Let's create commons to make the environmental impact assessment of digital prod
 * 🛰️ [Cloud-scanner](#cloud-scanner)
 * 🔌 [Energizta](#energizta)
 * 📉 [Eco-benchmark](#eco-benchmark)
+* 🗺️ [Mapping of the ICT Sustainability Tools Landscape](#mapping-of-the-ict-sustainability-tools-landscape)
 * 💾 [Boavizta repository](#boavizta-repository)
 * [Cloud-bill](#cloud-bill)
 
@@ -264,7 +265,49 @@ How to Contribute : https://github.com/Boavizta/ecobenchmark-applicationweb-back
 
 ----
 
+## Mapping of the ICT Sustainability Tools Landscape
+
+### Objective
+
+This repository aims at providing a vendor-neutral, fact-based, non-judgmental and exhaustive inventory of the tools and services available to assess the environmental footprint of IT components.
+
+Allow public contributions by non project members (open data approach).
+
+### Main features
+
+V1 early 2025, public beta.
+
+- a data model used to categorize the tools
+- a database of tools (+- 80)
+- a website that displays the list of tools and permit filtering and export
+- a contribution process and mechanism that allow
+  - external contributors to sugesst updates on the dataset
+  - maintainers to validate and historise contributions.
+
+### Roadmap (updated January 2025)
+
+- Review data, content validation.
+- communication and opening to end users.
+- Q2 2025: migrate to a new version of the widget component after Datami release it.
+- Possible evolutions of the data model dependeding on the feedback.
+
+### Technical stack
+
+**Language :** CSV, Datami widget, github actions CI for data validation
+
+### Lead devs
+
+[@demeringo](https://github.com/demeringo), [@fmomo](https://github.com/fmomo), [@gaelduez](https://github.com/gaelduez)
+
+### Links
+
+**github :** https://github.com/Boavizta/ict-sustainability-tools/
+
+----
+
 ## Boavizta repository
+
+
 
 ### Objective
 
