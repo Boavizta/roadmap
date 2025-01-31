@@ -287,9 +287,11 @@ V1 early 2025, public beta.
 ### Roadmap (updated January 2025)
 
 - Review data, content validation.
-- communication and opening to end users.
+- Document usage, contribution and review process (end-user manual).
+- Improve automatic validation in CI (conformity to the data model).
+- Communicate and open to end-users.
 - Q2 2025: migrate to a new version of the widget component after Datami release it.
-- Possible evolutions of the data model dependeding on the feedback.
+- Possible evolutions of the data model depending on the feedbacks.
 
 ### Technical stack
 
