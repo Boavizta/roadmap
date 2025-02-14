@@ -10,7 +10,7 @@ Let's create commons to make the environmental impact assessment of digital prod
 * 🛰️ [Cloud-scanner](#cloud-scanner)
 * 🔌 [Energizta](#energizta)
 * 📉 [Eco-benchmark](#eco-benchmark)
-* 🗺️ [Mapping of the ICT Sustainability Tools Landscape](#mapping-of-the-ict-sustainability-tools-landscape)
+* 🗺️ [Green IT tools landscape](#green-it-tools-landscape)
 * 💾 [Boavizta repository](#boavizta-repository)
 * [Cloud-bill](#cloud-bill)
 
@@ -265,11 +265,11 @@ How to Contribute : https://github.com/Boavizta/ecobenchmark-applicationweb-back
 
 ----
 
-## Mapping of the ICT Sustainability Tools Landscape
+## Green IT tools Landscape
 
 ### Objective
 
-This repository aims at providing a vendor-neutral, fact-based, non-judgmental and exhaustive inventory of the tools and services available to assess the environmental footprint of IT components.
+This project aims at providing a vendor-neutral, fact-based, non-judgmental and exhaustive inventory of the tools and services available to assess the environmental footprint of IT components.
 
 Allow public contributions by non project members (open data approach).
 
